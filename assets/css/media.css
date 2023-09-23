@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+    body {
+        background:aliceblue;
+    }
+
+    .container-fluid {
+        width: 100%;
+    }
+
+    .carousel-item > img {
+        width: 98%;
+        height: 100%;
+    }
+}

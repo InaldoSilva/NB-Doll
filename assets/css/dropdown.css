@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap");
+
+* {
+    text-decoration: none;
+}
+
+.dropdown {
+    display    : block;
+    place-items: center;
+    margin     : 0;
+    height     : 3%;
+    width      : 20%;
+    border: solid 1px rgb(222, 28, 28);
+    border-radius: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-decoration: none;
+    background : #000000;
+}
+
+.dropdown {
+    translate: 0 -20px;
+    position : relative;
+    cursor   : pointer;
+}
+
+.dropdown>button {
+    width        : 65%;
+    height       : 60px;
+    border       : 0;
+    border-radius: 20px;
+    font-family  : inherit;
+    font-size    : 1.5rem;
+    background   : linear-gradient(#6c3a3a, #a86b6b, #fdb2b2);
+}
+
+.dropdown>.content {
+    position       : absolute;
+    z-index        : 2;
+    top            : 0;
+    left           : 0;
+    width          : 50%;
+    height         : fit-content;
+    padding        : 0 16px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    gap            : 10px;
+    color          : #f7f7f7;
+}
+
+.dropdown>.content::after {
+    content   : "";
+    position  : absolute;
+    bottom    : 6px;
+    right     : 10%;
+    width     : 80%;
+    height    : 1px;
+    transform : scaleX(0);
+    background: rgba(225, 215, 215, 0.534);
+    transition: 0.3s;
+}
+
+.dropdown:hover>.content::after {
+    transform: scaleY(3);
+}
+
+.dropdown>.content>span:first-child {
+    font-size: 1.5rem;
+}
+
+.dropdown>.content>span:last-child {
+    margin-left: auto;
+}
+
+.dropdown>.content>span:last-child {
+    transition: 0.3s;
+}
+
+.dropdown:hover>.content>span:last-child {
+    rotate: -180deg;
+}
+
+.dropdown>.menu {
+    position     : absolute;
+    z-index      : 1;
+    top          : -6px;
+    left         : 30%;
+    display      : grid;
+    width        : 69%;
+    padding      : 70px 0 5px;
+    border-radius: 30px;
+    translate    : -50% 0;
+    visibility   : hidden;
+    opacity      : 0;
+    scale        : 0.85;
+    background   : linear-gradient(#cb4848, #c98d8d);
+    transition   : 0.5s;
+}
+
+.dropdown:hover>.menu {
+    visibility: visible;
+    opacity   : 1;
+    scale     : 1;
+}
+
+.dropdown>.menu>a {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+    color      : #f7f7f7;
+    font-size  : 14px;
+    padding    : 0 24px;
+}
+
+.dropdown>.menu>a:hover {
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 20px;
+}
+
+.dropdown>.menu>a>span {
+    font-size: 1rem;
+}
