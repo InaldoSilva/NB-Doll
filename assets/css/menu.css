@@ -18,7 +18,7 @@
 }
 
 #menuToggle a:hover {
-    color: rgba(255, 99, 71, 0.911);
+    color: #FF0099;
 }
 
 
@@ -44,7 +44,7 @@
     height       : 4px;
     margin-bottom: 5px;
     position     : relative;
-    background   : goldenrod;
+    background   : #5E17EB;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;

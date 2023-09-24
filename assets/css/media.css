@@ -11,4 +11,13 @@
         width: 98%;
         height: 100%;
     }
+
+    .card {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+    }
+
+    .rodape > h3 {
+        font-size: 1rem;
+    }
 }
