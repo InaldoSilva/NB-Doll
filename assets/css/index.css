@@ -9,7 +9,7 @@ header {
     position: static;
     z-index: 1;
     margin-top: 0;
-    background-color: #FF0099;
+    background-color: #FFc1c2;
     width: 100%;
     overflow: hidden;
 }
@@ -57,7 +57,8 @@ header {
     justify-content: center;
     margin: 20px 0 20px 0;
     color: #5E17EB;
-    background-color: #FF0099;
+    background-color: #FFc1c2;
+    padding: 15px;
 }
 
 .produtos-titulo > h1 {
@@ -80,7 +81,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FF0099;
+    background-color: #FFc1c2;
 }
 
 .rodape > h3 {
